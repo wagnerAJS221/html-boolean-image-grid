@@ -1,28 +1,36 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  height: 50px;
+  height: 80px;
   background-color: rgb(7, 7, 78);
+}
+.headerImg {
+  width: fit-content;
+  height: auto;
+  width: 80px;
+  position: absolute;
 }
 .card {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
   padding: 10px;
-  border-radius: px;
+  border-radius: 2px;
   padding-left: 100px;
   padding-right: 130px;
-}
 
-img {
-  width: 150px;
-  border-radius: 10px;
+  /* width: 50px;
+  position: relative; */
+  top: 0;
+  right: 0;
 }
 
 .boolean {
-  border: solid black;
-  margin-left: 20px;
-  border-radius: 10px;
+  display: grid;
+  border: solid rgb(0, 0, 0);
+  margin-left: 5px;
+  border-radius: 5px;
+  position: relative;
 }
 
 p {
@@ -37,8 +45,15 @@ p {
 }
 
 .icon {
-  width: 50px;
+  width: 5ch;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
+.small-icons {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px;
 }
